@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Ocultar/Revelar Mensajes: Fichero Fuente include/codificar.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Ocultar/Revelar Mensajes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('codificar_8h_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">codificar.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="codificar_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _CODIFICA_R_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define _CODIFICA_R_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="codificar_8h.html#acff3c97749e96db73b6520a8b79a1c02">imprimir</a>( <span class="keywordtype">char</span> m[]);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="codificar_8h.html#ab9f34e92098d0be8160952c67c860140">cabe_mensaje</a>(<span class="keywordtype">int</span> tam,<span class="keywordtype">char</span> mensaje[]);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="codificar_8h.html#a8fcf36d2c355ca820a8235b63e8a6358">activo</a>(<span class="keywordtype">int</span> numero ,<span class="keywordtype">int</span> nbit);              </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="codificar_8h.html#a7a418a4f66353ae416e9a8267f1a3a6c">comparaTipo</a>(<span class="keywordtype">char</span> nombre[],<span class="keywordtype">char</span> tipo[]);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="codificar_8h.html#a08491a33376401e0e3d8ecb5a47a69b9">lee_linea</a>(<span class="keywordtype">char</span> c[], <span class="keywordtype">int</span> tamanio);  </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="codificar_8h.html#ab02fbcfc8ff19e8dfa2b21c831392c21">ocultar</a>( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> buffer[],<span class="keywordtype">char</span> mensaje[],<span class="keywordtype">int</span> tam);           </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="codificar_8h.html#a6285efe4242f9fc696768c8c9ee56d61">revelar</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> buffer[],<span class="keywordtype">char</span> mensaje[],<span class="keywordtype">int</span> tam);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">/* Fin Fichero: codificar.h */</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="ttc" id="codificar_8h_html_ab02fbcfc8ff19e8dfa2b21c831392c21"><div class="ttname"><a href="codificar_8h.html#ab02fbcfc8ff19e8dfa2b21c831392c21">ocultar</a></div><div class="ttdeci">bool ocultar(unsigned char buffer[], char mensaje[], int tam)</div><div class="ttdoc">Oculta un cadena de caracteres (mensaje) en una imagen. </div></div>
+<div class="ttc" id="codificar_8h_html_a8fcf36d2c355ca820a8235b63e8a6358"><div class="ttname"><a href="codificar_8h.html#a8fcf36d2c355ca820a8235b63e8a6358">activo</a></div><div class="ttdeci">bool activo(int numero, int nbit)</div><div class="ttdoc">consulta si el bit esta activo o no </div></div>
+<div class="ttc" id="codificar_8h_html_acff3c97749e96db73b6520a8b79a1c02"><div class="ttname"><a href="codificar_8h.html#acff3c97749e96db73b6520a8b79a1c02">imprimir</a></div><div class="ttdeci">void imprimir(char m[])</div><div class="ttdoc">Imprimir. </div></div>
+<div class="ttc" id="codificar_8h_html_ab9f34e92098d0be8160952c67c860140"><div class="ttname"><a href="codificar_8h.html#ab9f34e92098d0be8160952c67c860140">cabe_mensaje</a></div><div class="ttdeci">bool cabe_mensaje(int tam, char mensaje[])</div><div class="ttdoc">consulta si el tamaño del mensaje cabe en la imagen </div></div>
+<div class="ttc" id="codificar_8h_html_a08491a33376401e0e3d8ecb5a47a69b9"><div class="ttname"><a href="codificar_8h.html#a08491a33376401e0e3d8ecb5a47a69b9">lee_linea</a></div><div class="ttdeci">void lee_linea(char c[], int tamanio)</div><div class="ttdoc">lee una cadena de caracteres y evita las líneas en blanco. </div></div>
+<div class="ttc" id="codificar_8h_html_a6285efe4242f9fc696768c8c9ee56d61"><div class="ttname"><a href="codificar_8h.html#a6285efe4242f9fc696768c8c9ee56d61">revelar</a></div><div class="ttdeci">bool revelar(unsigned char buffer[], char mensaje[], int tam)</div><div class="ttdoc">revela un mensaje oculto en una imagen. </div></div>
+<div class="ttc" id="codificar_8h_html_a7a418a4f66353ae416e9a8267f1a3a6c"><div class="ttname"><a href="codificar_8h.html#a7a418a4f66353ae416e9a8267f1a3a6c">comparaTipo</a></div><div class="ttdeci">bool comparaTipo(char nombre[], char tipo[])</div><div class="ttdoc">Comprueba si el nombre de la imagen de salida tiene incluido el tipo sea este .PGM o ...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<hr>
+<small>ETS Ingeniería Informática y Telecomunicaciones. Universidad de Granada.
+</small>
