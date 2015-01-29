@@ -2,6 +2,6 @@
 Programas realizados en c / c++.
 
 1. Laberinto realizado. 
-  a) Funciones.
-  b) Clases.
+  		Funciones.
+  		Clases.
 2. Banco (Modularización y Makefile)
