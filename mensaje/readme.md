@@ -1,3 +1,4 @@
-#OCULTAR Y REVELAR MENSAJE EN UNA IMAGEN .pgm, ppm
+#OCULTAR Y REVELAR MENSAJE 
+ En una imagen (pgm, ppm).
 
 
