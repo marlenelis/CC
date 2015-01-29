@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Procesamiento de imágenes: Fichero Fuente include/imagen.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.7.4 -->
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento de imágenes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('imagen_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">include/imagen.h</div>  </div>
+</div>
+<div class="contents">
+<a href="imagen_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor"># include &lt;iostream&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor"># include &quot;<a class="code" href="imagenES_8h.html" title="Fichero cabecera para la E/S de imágenes.">imagenES.h</a>&quot;</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef IMAGEN_H</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define IMAGEN_H</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span>
+<a name="l00014"></a><a class="code" href="classImagen.html">00014</a> <span class="keyword">class </span><a class="code" href="classImagen.html">Imagen</a>
+<a name="l00015"></a>00015 {
+<a name="l00016"></a>00016     <span class="keyword">private</span>:
+<a name="l00017"></a><a class="code" href="classImagen.html#a7f15719f14cd934dfcbd68c287bbbe8b">00017</a>         <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a7f15719f14cd934dfcbd68c287bbbe8b" title="Imagen filas.">filas</a>;                              
+<a name="l00018"></a><a class="code" href="classImagen.html#af63de0598ca965ab3a30b54ee7e2cedc">00018</a>                 <span class="keywordtype">int</span> <a class="code" href="classImagen.html#af63de0598ca965ab3a30b54ee7e2cedc" title="Imagen columnas.">columnas</a>;                   
+<a name="l00019"></a><a class="code" href="classImagen.html#a301aad9b9f29158959ee649e2e28f929">00019</a>                 <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> **<a class="code" href="classImagen.html#a301aad9b9f29158959ee649e2e28f929" title="Imagen buffer.">buffer</a>; 
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021     <span class="keyword">public</span>:
+<a name="l00026"></a>00026         <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528" title="constructor por defecto inicializa el nuevo tipo">Imagen</a>();<span class="comment">//constructor por defecto</span>
+<a name="l00027"></a>00027 
+<a name="l00033"></a>00033         <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528" title="constructor por defecto inicializa el nuevo tipo">Imagen</a>(<span class="keywordtype">int</span> f,<span class="keywordtype">int</span> c);<span class="comment">//constructor con parámetros</span>
+<a name="l00034"></a>00034 
+<a name="l00039"></a>00039         <a class="code" href="classImagen.html#a03dd93c9cf920a9dc0b72f8bd34f2e8a" title="destructor del nuevo tipo Liberacion de memoria">~Imagen</a>();<span class="comment">//destructor</span>
+<a name="l00040"></a>00040 
+<a name="l00044"></a>00044         <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528" title="constructor por defecto inicializa el nuevo tipo">Imagen</a>(<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a>&amp; orig);<span class="comment">//constructor de copias</span>
+<a name="l00048"></a>00048 <span class="comment"></span>        <a class="code" href="classImagen.html">Imagen</a>&amp; <a class="code" href="classImagen.html#a99f00cadf9c752b962a2494ab839427a" title="redefinición de operator=">operator=</a>(<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a>&amp; orig);<span class="comment">//operator=</span>
+<a name="l00049"></a>00049 
+<a name="l00055"></a>00055         <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a4cc181b097a76bc3204161d98cfb5fa6" title="Devuelve el número filas.">Filas</a>()<span class="keyword">const</span>;
+<a name="l00056"></a>00056 
+<a name="l00062"></a>00062         <span class="keywordtype">int</span> <a class="code" href="classImagen.html#aa7fb553d54e0d1ad019b61d65ee11935" title="Devuelve el número columnas.">Columnas</a>()<span class="keyword">const</span>;
+<a name="l00063"></a>00063 
+<a name="l00071"></a>00071         <span class="keywordtype">void</span> <a class="code" href="classImagen.html#aa833b6acd6301a28c8e79323f84f7185" title="Inserta un nuevo dato en el nuevo tipo Imagen.">Set</a>(<span class="keywordtype">int</span> i,<span class="keywordtype">int</span> j,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> val);
+<a name="l00072"></a>00072 
+<a name="l00080"></a>00080         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="classImagen.html#afbfd81bbf28620cc319f2423b202f1da" title="Obtiene el dato que se encuentra en la posición i (filas) y j (columnas)">Get</a>(<span class="keywordtype">int</span> i,<span class="keywordtype">int</span> j)<span class="keyword">const</span>;
+<a name="l00081"></a>00081 
+<a name="l00090"></a>00090         <span class="keywordtype">bool</span> <a class="code" href="classImagen.html#a6bafaaa1b13032f6134f2aa0668842c7" title="Lee una imagen de tipo PGM sobre memoria reservada.">LeerImagen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> file[]);
+<a name="l00091"></a>00091 
+<a name="l00100"></a>00100         <span class="keywordtype">bool</span> <a class="code" href="classImagen.html#a1ebe71a9a6a0e2a0b57067c92d3cacde" title="Escribe una imagen de tipo PGM.">EscribirImagen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> file[])<span class="keyword">const</span>;
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 };
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <span class="preprocessor">#endif // IMAGEN_H</span>
+</pre></div></div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="imagen_8h.html">imagen.h</a>      </li>
+<hr>
+<small>ETS Ingeniería Informática y Telecomunicaciones. Universidad de Granada.
+</small>

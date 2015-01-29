@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Procesamiento de imágenes: Referencia del Archivo include/procesar.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.7.4 -->
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento de imágenes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('procesar_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">'defines'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo include/procesar.h</div>  </div>
+</div>
+<div class="contents">
+
+<p>Fichero cabecera que contiene las declaraciones de las funciones para ocultar/extraer un mensaje y transformar imagenes.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
+<code>#include &quot;<a class="el" href="imagen_8h_source.html">imagen.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="transformacion_8h_source.html">transformacion.h</a>&quot;</code><br/>
+</div>
+<p><a href="procesar_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fbd09e9a41649eb3d15871d8aac327f"></a><!-- doxytag: member="procesar.h::tamanio" ref="a6fbd09e9a41649eb3d15871d8aac327f" args="(const char c[])" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="procesar_8h.html#a6fbd09e9a41649eb3d15871d8aac327f">tamanio</a> (const char c[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">devuelve el tamaño de un vector de caracteres que lo utilizaremos para almacenar el mensaje que se va a ocultar/revelar. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fcf36d2c355ca820a8235b63e8a6358"></a><!-- doxytag: member="procesar.h::activo" ref="a8fcf36d2c355ca820a8235b63e8a6358" args="(int numero, int nbit)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="procesar_8h.html#a8fcf36d2c355ca820a8235b63e8a6358">activo</a> (int numero, int nbit)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">devuelve si el bit es 1 o 0 al recorrer el <em>numero</em> <em>nbit</em> <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="procesar_8h.html#a2185a4d2984009b00e39b69da35740ce">ocultar</a> (<a class="el" href="classImagen.html">Imagen</a> &amp;img, char mensaje[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">oculta el mensaje en la imagen.  <a href="#a2185a4d2984009b00e39b69da35740ce"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="procesar_8h.html#a7d729e4cd0836ecd7b09958f2feadb49">revelar</a> (<a class="el" href="classImagen.html">Imagen</a> img, char mensaje[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">revela el mensaje de la imagen.  <a href="#a7d729e4cd0836ecd7b09958f2feadb49"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="procesar_8h.html#a890d3c3dec87c589f5f42ee17a1cb65e">transformar_Imagen</a> (<a class="el" href="classImagen.html">Imagen</a> &amp;entrada, <a class="el" href="classTransformacion.html">Transformacion</a> Tr)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">transforma una imagen tras aplicar una transformación.  <a href="#a890d3c3dec87c589f5f42ee17a1cb65e"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Fichero cabecera que contiene las declaraciones de las funciones para ocultar/extraer un mensaje y transformar imagenes. </p>
+
+<p>Definición en el archivo <a class="el" href="procesar_8h_source.html">procesar.h</a>.</p>
+</div><hr/><h2>Documentación de las funciones</h2>
+<a class="anchor" id="a2185a4d2984009b00e39b69da35740ce"></a><!-- doxytag: member="procesar.h::ocultar" ref="a2185a4d2984009b00e39b69da35740ce" args="(Imagen &amp;img, char mensaje[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ocultar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classImagen.html">Imagen</a> &amp;&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>mensaje</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>oculta el mensaje en la imagen. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">img</td><td>imagen en la cual se va a ocultar el mensaje. </td></tr>
+    <tr><td class="paramname">mensaje</td><td>mensaje a ocultar en la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>true si se ha realizado la ocultación con éxito. </dd>
+<dd>
+false si no se a ocultado el mensaje. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7d729e4cd0836ecd7b09958f2feadb49"></a><!-- doxytag: member="procesar.h::revelar" ref="a7d729e4cd0836ecd7b09958f2feadb49" args="(Imagen img, char mensaje[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool revelar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classImagen.html">Imagen</a>&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>mensaje</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>revela el mensaje de la imagen. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">img</td><td>imagen de la cual se va a obtener el mensaje. </td></tr>
+    <tr><td class="paramname">mensaje</td><td>mensaje obtenido de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>true si se ha realizado con éxito la revelación. </dd>
+<dd>
+false si no se ha realizado con éxito la revelación. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a890d3c3dec87c589f5f42ee17a1cb65e"></a><!-- doxytag: member="procesar.h::transformar_Imagen" ref="a890d3c3dec87c589f5f42ee17a1cb65e" args="(Imagen &amp;entrada, Transformacion Tr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool transformar_Imagen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classImagen.html">Imagen</a> &amp;&#160;</td>
+          <td class="paramname"><em>entrada</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTransformacion.html">Transformacion</a>&#160;</td>
+          <td class="paramname"><em>Tr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>transforma una imagen tras aplicar una transformación. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entrada</td><td>imagen a la cual se va a aplicar una transformación, cambiando los valores de cada pixel por los valores que contiene <em>Tr</em> . </td></tr>
+    <tr><td class="paramname">Tr</td><td>valores con los que se va a cambiar los pixeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>true si se ha realizado con éxito la transformación. </dd>
+<dd>
+false si no se ha realizado con éxito la transformación. </dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="procesar_8h.html">procesar.h</a>      </li>
+<hr>
+<small>ETS Ingeniería Informática y Telecomunicaciones. Universidad de Granada.
+</small>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Procesamiento de imágenes: Fichero Fuente include/procesar.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.7.4 -->
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento de imágenes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('procesar_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">include/procesar.h</div>  </div>
+</div>
+<div class="contents">
+<a href="procesar_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00014"></a>00014 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="imagen_8h.html" title="Representación en base a dos enteros (filas y columnas) más un vector -en memoria dinámica- de punter...">imagen.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="transformacion_8h.html" title="Fichero cabecera para insertar la implementación deseada.">transformacion.h</a>&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="preprocessor">#ifndef PROCESAR_H</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#define PROCESAR_H</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span>
+<a name="l00022"></a>00022 <span class="keyword">using namespace </span>std;
+<a name="l00027"></a>00027         <span class="keywordtype">int</span> <a class="code" href="procesar_8h.html#a6fbd09e9a41649eb3d15871d8aac327f" title="devuelve el tamaño de un vector de caracteres que lo utilizaremos para almacenar el mensaje que se va...">tamanio</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> c[]);<span class="comment">//tamaño de un vector de caracteres</span>
+<a name="l00028"></a>00028 
+<a name="l00032"></a>00032         <span class="keywordtype">bool</span> <a class="code" href="procesar_8h.html#a8fcf36d2c355ca820a8235b63e8a6358" title="devuelve si el bit es 1 o 0 al recorrer el numero nbit ">activo</a>(<span class="keywordtype">int</span> numero ,<span class="keywordtype">int</span> nbit);
+<a name="l00033"></a>00033 
+<a name="l00041"></a>00041         <span class="keywordtype">bool</span> <a class="code" href="procesar_8h.html#a2185a4d2984009b00e39b69da35740ce" title="oculta el mensaje en la imagen.">ocultar</a>( <a class="code" href="classImagen.html">Imagen</a>&amp; img ,<span class="keywordtype">char</span> mensaje[]);
+<a name="l00042"></a>00042 
+<a name="l00050"></a>00050         <span class="keywordtype">bool</span>  <a class="code" href="procesar_8h.html#a7d729e4cd0836ecd7b09958f2feadb49" title="revela el mensaje de la imagen.">revelar</a> (<a class="code" href="classImagen.html">Imagen</a> img,<span class="keywordtype">char</span> mensaje[]);
+<a name="l00051"></a>00051 
+<a name="l00060"></a>00060         <span class="keywordtype">bool</span> <a class="code" href="procesar_8h.html#a890d3c3dec87c589f5f42ee17a1cb65e" title="transforma una imagen tras aplicar una transformación.">transformar_Imagen</a>( <a class="code" href="classImagen.html">Imagen</a>&amp; entrada,<a class="code" href="classTransformacion.html">Transformacion</a> Tr);
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="procesar_8h.html">procesar.h</a>      </li>
+<hr>
+<small>ETS Ingeniería Informática y Telecomunicaciones. Universidad de Granada.
+</small>

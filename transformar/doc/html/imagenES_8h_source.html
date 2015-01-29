@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Procesamiento de imágenes: Fichero Fuente include/imagenES.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Generado por Doxygen 1.7.4 -->
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento de imágenes</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('imagenES_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">include/imagenES.h</div>  </div>
+</div>
+<div class="contents">
+<a href="imagenES_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00009"></a>00009 <span class="preprocessor">#ifndef _IMAGEN_ES_H_</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="preprocessor">#define _IMAGEN_ES_H_</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span>
+<a name="l00020"></a><a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522ed">00020</a> <span class="keyword">enum</span> <a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522ed" title="Tipo de imagen.">TipoImagen</a> {<a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522eda23c8d70e6eadf2d0d0ee1fd3bb293384" title="Tipo de imagen desconocido.">IMG_DESCONOCIDO</a>, 
+<a name="l00021"></a><a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522eda8fbef75c1a0002dd6099c6cc1a43e441">00021</a>                  <a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522eda8fbef75c1a0002dd6099c6cc1a43e441" title="Imagen tipo PGM.">IMG_PGM</a>,         
+<a name="l00022"></a><a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522eda1269c51434b906a7e507f5b49663bf4f">00022</a>                  <a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522eda1269c51434b906a7e507f5b49663bf4f" title="Imagen tipo PPM.">IMG_PPM</a>          
+<a name="l00023"></a>00023                 };
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 
+<a name="l00036"></a>00036 <a class="code" href="imagenES_8h.html#a8914f6544a484741b05c092d9e7522ed" title="Tipo de imagen.">TipoImagen</a> <a class="code" href="imagenES_8h.html#a4ba3a13a2951f968a61b3d60b06c8784" title="Consulta el tipo de imagen del archivo y sus dimensiones.">LeerTipoImagen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keywordtype">int</span>&amp; filas, <span class="keywordtype">int</span>&amp; columnas);
+<a name="l00037"></a>00037 
+<a name="l00051"></a>00051 <span class="keywordtype">bool</span> <a class="code" href="imagenES_8h.html#a4a6f0611d8fe9496ad0f3525e29684de" title="Lee una imagen de tipo PPM sobre memoria reservada.">LeerImagenPPM</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keywordtype">int</span>&amp; filas, <span class="keywordtype">int</span>&amp; columnas, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> buffer[]);
+<a name="l00052"></a>00052 
+<a name="l00064"></a>00064 <span class="keywordtype">bool</span> <a class="code" href="imagenES_8h.html#a420de11a71f00b579f392e94f0d2498e" title="Escribe una imagen de tipo PPM.">EscribirImagenPPM</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> datos[], <span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c);
+<a name="l00065"></a>00065 
+<a name="l00078"></a>00078 <span class="keywordtype">bool</span> <a class="code" href="imagenES_8h.html#a7989c5e096410d5bb9ac230b53ab1304" title="Lee una imagen de tipo PGM sobre memoria reservada.">LeerImagenPGM</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keywordtype">int</span>&amp; filas, <span class="keywordtype">int</span>&amp; columnas, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> buffer[]);
+<a name="l00079"></a>00079 
+<a name="l00091"></a>00091 <span class="keywordtype">bool</span> <a class="code" href="imagenES_8h.html#abf2397dda9f7cde383655b0a081b7c93" title="Escribe una imagen de tipo PGM.">EscribirImagenPGM</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> datos[], <span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c);
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="preprocessor">#endif</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span>
+<a name="l00095"></a>00095 <span class="comment">/* Fin Fichero: imagenES.h */</span>
+<a name="l00096"></a>00096 
+</pre></div></div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="imagenES_8h.html">imagenES.h</a>      </li>
+<hr>
+<small>ETS Ingeniería Informática y Telecomunicaciones. Universidad de Granada.
+</small>
