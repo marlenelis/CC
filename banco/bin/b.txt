@@ -1,0 +1,32 @@
+2
+12345678d
+Antonio
+Perez Gutierrez
+C/ del Percebe, 13
+98765432a
+Juan
+Garcia Garcia
+C/ de Abajo, 10
+2
+12340443161122334455
+3250
+6
+02 03 2010    10 30 27       2000    Primera imposicin
+02 03 2010    12 15 52       1000    Mi primer sueldo
+17 05 2010    10 47 34       -500    Para las compras de navidad
+12 07 2010    17 21 22       -100    Para pagar recibos
+24 09 2010    13 45 08        700    Un trabajillo extra
+09 01 2011    19 23 32        150    Otro ingreso
+00043006780000012345
+13200
+3
+06 03 2010    09 01 10      10000    Primera imposicin
+24 12 2010    14 31 00      -2500    Vmonos de compras
+03 01 2011    08 05 07       5700    Me ha tocado la lotera
+3
+12345678d
+12340443161122334455
+98765432a
+00043006780000012345
+98765432a
+12340443161122334455
